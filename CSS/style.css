@@ -1,0 +1,70 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+}
+
+/* Centrado total en pantalla */
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e9edf2;
+  font-family: Arial, sans-serif;
+  padding: 20px; /* evita que pegue a los bordes en celular */
+}
+
+/* Contenedor */
+.tablero {
+  background: #ffffff;
+  padding: 25px;
+  width: 100%;
+  max-width: 400px; /* clave para responsividad */
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* Título */
+.tablero h1 {
+  margin-bottom: 20px;
+  color: #2c3e50;
+  font-size: 22px;
+  text-align: center;
+}
+
+/* Botones */
+.tablero a {
+  display: block;
+  text-decoration: none;
+  background: linear-gradient(135deg, #2e86de, #1b4f72);
+  color: white;
+  padding: 14px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  font-size: 15px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+/* Hover */
+.tablero a:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #1b4f72, #154360);
+}
+
+/* 📱 Ajustes para pantallas pequeñas */
+@media (max-width: 480px) {
+  .tablero {
+    padding: 20px;
+  }
+
+  .tablero h1 {
+    font-size: 18px;
+  }
+
+  .tablero a {
+    font-size: 14px;
+    padding: 12px;
+  }
+}
